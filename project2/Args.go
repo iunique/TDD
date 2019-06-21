@@ -9,8 +9,8 @@ import (
 type Args struct {
 	Flags string
 	Command string
-	FlagsMapping map[byte]string
-	CommandMapping map[byte]string
+	FlagsMapping map[string]string
+	CommandMapping map[string]string
 }
 
 func (args *Args)Check()bool{
@@ -24,8 +24,8 @@ func (args *Args)Check()bool{
 func (args *Args)Init(flags string,command string){
 	args.Flags=flags
 	args.Command=command
-	args.FlagsMapping=make(map[byte]string)
-	args.CommandMapping=make(map[byte]string)
+	args.FlagsMapping=make(map[string]string)
+	args.CommandMapping=make(map[string]string)
 }
 
 func (args *Args)ParseFlags(){
@@ -35,8 +35,7 @@ func (args *Args)ParseFlags(){
 	}
 	s:=strings.Split(args.Flags,",")
 	for i:=0;i<len(s);i++{
-		args.FlagsMapping[s[i][0]]=s[i][2:]
-		//logrus.Printf("%c %s",s[i][0],s[i][2:])
+		args.FlagsMapping[s[i][0:1]]=s[i][2:]
 	}
 }
 
@@ -45,16 +44,15 @@ func (args *Args)ParseCommand(){
 		logrus.Println("ParseCommand false!")
 		return
 	}
-	s:=strings.Split(args.Flags,"-")
+	s:=strings.Split(args.Command,"-")
 	for i:=0;i<len(s);i++{
 		t:=strings.Split(s[i]," ")
 		if(len(t)<2){
-			if(args.FlagsMapping[t[0][0]]!=""){}
 		}
 	}
 }
 
-func (args *Args)CheckType(key byte,v interface{})bool{
+func (args *Args)CheckType(key string,v interface{})bool{
 	if !args.Check(){
 		logrus.Println("GetValue false!")
 		return false
@@ -71,7 +69,7 @@ func (args *Args)CheckType(key byte,v interface{})bool{
 	return false
 }
 
-func (args *Args)GetValue(key byte)string{
+func (args *Args)GetValue(key string)string{
 	if !args.Check(){
 		logrus.Println("GetValue false!")
 		return ""

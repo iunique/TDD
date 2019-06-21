@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project2/Args.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="62" column="15" lean-forward="true" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="15" />
+            <state relative-caret-position="114">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="e#18#69#0" expanded="true" />
               </folding>
@@ -38,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project2/Args_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="258">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding>
                 <element signature="e#18#50#0" expanded="true" />
               </folding>
@@ -63,8 +63,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/project2/Args.go" />
         <option value="$PROJECT_DIR$/project2/Args_test.go" />
+        <option value="$PROJECT_DIR$/project2/Args.go" />
       </list>
     </option>
   </component>
@@ -110,7 +110,7 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561111794102" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561117117342" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -172,17 +172,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561099123505</updated>
-      <workItem from="1561099127338" duration="9297000" />
+      <workItem from="1561099127338" duration="12292000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestGame_in_TDD_project1 - 2019.06.21 at 15h 05m 02s.xml">
-      <configuration name="TestGame in TDD/project1" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestGame_in_TDD_project1 - 2019.06.21 at 17h 12m 23s.xml">
-      <configuration name="TestGame in TDD/project1" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestGame_in_TDD_project1 - 2019.06.21 at 17h 16m 21s.xml">
       <configuration name="TestGame in TDD/project1" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -207,9 +201,15 @@
     <history-entry file="TestD_in_TDD_project2 - 2019.06.21 at 18h 08m 46s.xml">
       <configuration name="TestD in TDD/project2" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="TestD_in_TDD_project2 - 2019.06.21 at 18h 11m 38s.xml">
+      <configuration name="TestD in TDD/project2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestD_in_TDD_project2 - 2019.06.21 at 18h 14m 43s.xml">
+      <configuration name="TestD in TDD/project2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9297000" />
+    <option name="totallyTimeSpent" value="12292000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -277,10 +277,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project2/Args_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="258">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding>
             <element signature="e#18#50#0" expanded="true" />
           </folding>
@@ -289,8 +297,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project2/Args.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="62" column="15" lean-forward="true" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="15" />
+        <state relative-caret-position="114">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#18#69#0" expanded="true" />
           </folding>
