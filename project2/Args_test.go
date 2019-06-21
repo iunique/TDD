@@ -10,19 +10,19 @@ func TestArgs(test *testing.T){
 		flags string
 		command string
 		key byte
-		real string
+		real interface{}
 	}{
 		{
 			flags:"l:bool,d:int,f:string",
 			command:"-l -d 8010 -f /usr/local",
 			key:'1',
-			real:"false",
+			real:false,
 		},
 		{
 			flags:"l:bool,d:int,f:string",
 			command:"-l -d 8010 -f /usr/local",
 			key:'d',
-			real:"8080",
+			real:8080,
 		},
 		{
 			flags:"l:bool,d:int,f:string",
@@ -37,8 +37,11 @@ func TestArgs(test *testing.T){
 		args.ParseFlags()
 		args.ParseCommand()
 		s:=args.GetValue(t.key)
-		if(strings.Compare(s,t.real)!=0) {
-			test.Errorf("第%d组出错，输入参数:flags:%v command:%v key:%v real:%s  得到结果:%s\n",i,t.flags,t.command,t.key,t.real,s)
+		if(!args.CheckType(t.key,t.real)) {
+			test.Errorf("第%d组类型错误，输入参数:flags:%v command:%v key:%c real:%v  得到结果:%s\n",i,t.flags,t.command,t.key,t.real,s)
+		}
+		if(strings.Compare(args.GetValue(t.key),s)!=0){
+			test.Errorf("第%d组结果错误，输入参数:flags:%v command:%v key:%c real:%v  得到结果:%s\n",i,t.flags,t.command,t.key,t.real,s)
 		}
 	}
 }
