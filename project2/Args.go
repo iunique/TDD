@@ -69,7 +69,7 @@ func (args *Args)ParseCommand(){
 			}else if(t[0]=="f"){
 				args.CommandMapping["f"]="."
 			}
-		} else if(len(t)==2){//拆分后有参数且只能跟一个参数
+		} else if(len(t)==2||len(t)==3&&t[2]==""){//拆分后有参数且只能跟一个参数
 			//检查第一个字符是否合法
 			_,isExist:=args.FlagsMapping[t[0]]
 			if(!isExist){
