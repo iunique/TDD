@@ -15,7 +15,7 @@ type Args struct {
 
 func (args *Args)Check()bool{
 	if args.Flags==""||args.Command==""||args.FlagsMapping==nil||args.CommandMapping==nil{
-		logrus.Println("the args is not ready")
+		logrus.Errorf("the args is not ready")
 		return false
 	}
 	return true
@@ -45,17 +45,85 @@ func (args *Args)ParseCommand(){
 		return
 	}
 	s:=strings.Split(args.Command,"-")
+	logrus.Println(s)
 	for i:=0;i<len(s);i++{
 		t:=strings.Split(s[i]," ")
-		if(len(t)<2){
+		if(len(t)==1){//若拆分后没有参数，则进行默认初始化
+			_,isExist:=args.FlagsMapping[t[0]]
+			if(!isExist){
+				if (IsDigit(t[0])) { //-d后面接负数情况
+					args.CommandMapping["d"]="-"+t[0]
+				} else {
+					logrus.Println("commond 字符不存在！输入command错误")
+					panic("commond 字符不存在！输入command错误")
+				}
+			}
+			if(t[0]=="l"){
+				args.CommandMapping["l"]="false"
+			}else if(t[0]=="d"){
+				args.CommandMapping["d"]="0"
+			}else if(t[0]=="f"){
+				args.CommandMapping["f"]="."
+			}
+		} else if(len(t)==2){//拆分后有参数且只能跟一个参数
+			//检查第一个字符是否合法
+			_,isExist:=args.FlagsMapping[t[0]]
+			if(!isExist){
+				logrus.Println("commond 字符不存在！输入command错误")
+				panic("commond 字符不存在！输入command错误")
+			}
+			//检查输入的参数是否和值匹配
+			if(t[0]=="l"){
+				if(t[1]=="false"||t[1]=="true") { //默认小写
+					args.CommandMapping[t[0]]=t[1]
+				}else {
+					logrus.Println("commond 字符不合法！输入command错误")
+					panic("commond 字符不合法！输入command错误")
+				}
+			}else if(t[0]=="d"){
+				if (IsDigit(t[1])) { //
+					args.CommandMapping["d"]=t[1]
+				} else {
+					logrus.Println("commond 字符不合法！输入command错误")
+					panic("commond 字符不合法！输入command错误")
+				}
+			}else if(t[0]=="f"){
+				args.CommandMapping["f"]=t[1]
+			}
+
+		} else{
+			logrus.Println("commond 字符不合法！输入command错误")
+			panic("commond 字符不合法！输入command错误")
 		}
 	}
+}
+//判断个位数字
+func IsSingleDigit(data string) bool {
+
+	digit := []string{"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}
+
+	for _, item := range digit {
+		if data == item {
+			return true
+		}
+	}
+	return false
+}
+//判断数字
+func IsDigit(data string) bool{
+	for _, item := range data{
+		if IsSingleDigit(string(item)) {
+			continue
+		} else {
+			return false
+		}
+	}
+	return true
 }
 
 func (args *Args)CheckType(key string,v interface{})bool{
 	if !args.Check(){
 		logrus.Println("GetValue false!")
-		return false
 	}
 	value,isFind:=args.FlagsMapping[key]
 	if(isFind){
