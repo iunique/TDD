@@ -48,7 +48,11 @@ func (args *Args)ParseCommand(){
 	logrus.Println(s)
 	for i:=0;i<len(s);i++{
 		t:=strings.Split(s[i]," ")
-		if(len(t)==1){//若拆分后没有参数，则进行默认初始化
+		for j:=0;j<len(t);j++{
+			t[j]=strings.TrimSpace(t[j])
+		}
+		logrus.Println("t:",t)
+		if(len(t)==1||len(t)==2&&t[1]==""){//若拆分后没有参数，则进行默认初始化
 			_,isExist:=args.FlagsMapping[t[0]]
 			if(!isExist){
 				if (IsDigit(t[0])) { //-d后面接负数情况
@@ -77,23 +81,23 @@ func (args *Args)ParseCommand(){
 				if(t[1]=="false"||t[1]=="true") { //默认小写
 					args.CommandMapping[t[0]]=t[1]
 				}else {
-					logrus.Println("commond 字符不合法！输入command错误")
-					panic("commond 字符不合法！输入command错误")
+					logrus.Println("commond 字符不合法【bool】！输入command错误")
+					panic("commond 字符不合法【bool】！输入command错误")
 				}
 			}else if(t[0]=="d"){
 				if (IsDigit(t[1])) { //
 					args.CommandMapping["d"]=t[1]
 				} else {
-					logrus.Println("commond 字符不合法！输入command错误")
-					panic("commond 字符不合法！输入command错误")
+					logrus.Println("commond 字符不合法，-d后接的类型不为数字！输入command错误")
+					panic("commond 字符不合法，-d后接的类型不为数字！输入command错误")
 				}
 			}else if(t[0]=="f"){
 				args.CommandMapping["f"]=t[1]
 			}
 
-		} else{
-			logrus.Println("commond 字符不合法！输入command错误")
-			panic("commond 字符不合法！输入command错误")
+		} else{//拆分后跟着多个参数
+			logrus.Println("commond 字符参数过多！输入command错误")
+			panic("commond 字符参数过多！输入command错误")
 		}
 	}
 }
