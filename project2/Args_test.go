@@ -30,6 +30,42 @@ func TestArgs(test *testing.T){
 			key:"f",
 			real:"/usr/local",
 		},
+		{
+			flags:"l:bool,d:int,f:string,s:string",
+			command: "-d -9 -f /usr/local -s",
+			key:"l",
+			real:false,
+		},
+		{
+			flags:"l:bool,d:int,f:string,s:string",
+			command: "-d -9 -f /usr/local -s",
+			key:"f",
+			real:"/usr/local",
+		},
+		{
+			flags:"l:bool,d:int,f:string,s:string",
+			command: "-d -9 -f /usr/local -s",
+			key:"s",
+			real:"",
+		},
+		{
+			flags:"l:bool,d:int,f:string",
+			command: "-d 8080",
+			key:"l",
+			real:false,
+		},
+		{
+			flags:"l:bool,d:int,f:string",
+			command: "-d 8080",
+			key:"d",
+			real:8080,
+		},
+		{
+			flags:"l:bool,d:int,f:string",
+			command: "-d 8080",
+			key:"f",
+			real:".",
+		},
 	}
 	for i,t :=range exp{
 		args := new(Args)

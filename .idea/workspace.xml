@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="028dd0cb-f768-4bc1-908e-8724b2390b99" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/project2/Args.go" beforeDir="false" afterPath="$PROJECT_DIR$/project2/Args.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/Args_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/project2/Args_test.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project2/Args.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-53">
-              <caret line="57" column="48" lean-forward="true" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
+            <state relative-caret-position="263">
+              <caret line="147" column="5" lean-forward="true" selection-start-line="147" selection-start-column="5" selection-end-line="147" selection-end-column="5" />
               <folding>
                 <element signature="e#18#80#0" expanded="true" />
               </folding>
@@ -25,20 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/Go/src/reflect/type.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="92" selection-start-line="92" selection-end-line="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project2/Args_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="149">
+              <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
               <folding>
                 <element signature="e#18#50#0" expanded="true" />
               </folding>
@@ -62,8 +54,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/project2/Args_test.go" />
         <option value="$PROJECT_DIR$/project2/Args.go" />
+        <option value="$PROJECT_DIR$/project2/Args_test.go" />
       </list>
     </option>
   </component>
@@ -109,7 +101,7 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561183369269" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561184082099" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -184,26 +176,11 @@
       <option name="presentableId" value="Default" />
       <updated>1561099123505</updated>
       <workItem from="1561099127338" duration="12422000" />
-      <workItem from="1561178785834" duration="4531000" />
+      <workItem from="1561178785834" duration="5184000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 12h 47m 14s.xml">
-      <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 12h 48m 10s.xml">
-      <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 13h 41m 53s.xml">
-      <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 13h 47m 13s.xml">
-      <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 13h 47m 53s.xml">
-      <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 13h 48m 17s.xml">
       <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -219,13 +196,27 @@
     <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 14h 01m 54s.xml">
       <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 14h 04m 15s.xml">
+      <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 14h 05m 56s.xml">
+      <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 14h 09m 11s.xml">
+      <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 14h 10m 42s.xml">
+      <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 14h 13m 35s.xml">
+      <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16953000" />
+    <option name="totallyTimeSpent" value="17606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20710456" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -236,7 +227,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33144477" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34135976" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -290,16 +281,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2/Args_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <element signature="e#18#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/Go/src/reflect/type.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -309,10 +290,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project2/Args.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53">
-          <caret line="57" column="48" lean-forward="true" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
+        <state relative-caret-position="263">
+          <caret line="147" column="5" lean-forward="true" selection-start-line="147" selection-start-column="5" selection-end-line="147" selection-end-column="5" />
           <folding>
             <element signature="e#18#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2/Args_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+          <folding>
+            <element signature="e#18#50#0" expanded="true" />
           </folding>
         </state>
       </provider>

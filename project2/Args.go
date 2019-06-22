@@ -59,7 +59,7 @@ func (args *Args)ParseCommand(){
 					args.CommandMapping["d"]="-"+t[0]
 				} else {
 					logrus.Println("commond 字符不存在！输入command错误")
-					panic("commond 字符不存在！输入command错误")
+					//panic("commond 字符不存在！输入command错误")
 				}
 			}
 			if(t[0]=="l"){
@@ -74,7 +74,7 @@ func (args *Args)ParseCommand(){
 			_,isExist:=args.FlagsMapping[t[0]]
 			if(!isExist){
 				logrus.Println("commond 字符不存在！输入command错误")
-				panic("commond 字符不存在！输入command错误")
+				//panic("commond 字符不存在！输入command错误")
 			}
 			//检查输入的参数是否和值匹配
 			if(t[0]=="l"){
@@ -82,14 +82,14 @@ func (args *Args)ParseCommand(){
 					args.CommandMapping[t[0]]=t[1]
 				}else {
 					logrus.Println("commond 字符不合法【bool】！输入command错误")
-					panic("commond 字符不合法【bool】！输入command错误")
+					//panic("commond 字符不合法【bool】！输入command错误")
 				}
 			}else if(t[0]=="d"){
 				if (IsDigit(t[1])) { //
 					args.CommandMapping["d"]=t[1]
 				} else {
 					logrus.Println("commond 字符不合法，-d后接的类型不为数字！输入command错误")
-					panic("commond 字符不合法，-d后接的类型不为数字！输入command错误")
+					//panic("commond 字符不合法，-d后接的类型不为数字！输入command错误")
 				}
 			}else if(t[0]=="f"){
 				args.CommandMapping["f"]=t[1]
@@ -97,7 +97,7 @@ func (args *Args)ParseCommand(){
 
 		} else{//拆分后跟着多个参数
 			logrus.Println("commond 字符参数过多！输入command错误")
-			panic("commond 字符参数过多！输入command错误")
+			//panic("commond 字符参数过多！输入command错误")
 		}
 	}
 }
