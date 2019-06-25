@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="028dd0cb-f768-4bc1-908e-8724b2390b99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/project2/BoolParser.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project2/Checker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project2/IntParser.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project2/StringParser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project2/Args.go" beforeDir="false" afterPath="$PROJECT_DIR$/project2/Args.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project2/Args_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/project2/Args_test.go" afterDir="false" />
     </list>
@@ -14,23 +19,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project2/Args.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="147" column="5" lean-forward="true" selection-start-line="147" selection-start-column="5" selection-end-line="147" selection-end-column="5" />
+            <state relative-caret-position="35">
+              <caret line="69" column="27" lean-forward="true" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
               <folding>
-                <element signature="e#18#80#0" expanded="true" />
+                <element signature="e#18#69#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project2/BoolParser.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+              <folding>
+                <element signature="e#18#69#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project2/IntParser.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+              <folding>
+                <element signature="e#18#69#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project2/StringParser.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project2/Checker.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+              <folding>
+                <element signature="e#18#69#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project2/Args_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+            <state relative-caret-position="-551">
+              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
               <folding>
                 <element signature="e#18#50#0" expanded="true" />
               </folding>
@@ -54,12 +104,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/project2/Args.go" />
         <option value="$PROJECT_DIR$/project2/Args_test.go" />
+        <option value="$PROJECT_DIR$/project2/StringParser.go" />
+        <option value="$PROJECT_DIR$/project2/IntParser.go" />
+        <option value="$PROJECT_DIR$/project2/BoolParser.go" />
+        <option value="$PROJECT_DIR$/project2/Checker.go" />
+        <option value="$PROJECT_DIR$/project2/Args.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -71,8 +125,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="CatdeaLogs" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,17 +146,20 @@
           <select />
         </subPane>
       </pane>
+      <pane id="CatdeaLogs" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561184082099" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561434464351" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -146,22 +201,46 @@
       <pattern value="^TestD$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGame in TDD/project1" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIntParse in TDD/project2" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="TDD" />
-      <working_directory value="$PROJECT_DIR$/project1" />
+      <working_directory value="$PROJECT_DIR$/project2" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="TDD/project1" />
+      <package value="TDD/project2" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^TestGame$" />
+      <pattern value="^TestIntParse$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestIntParse1 in TDD/project2" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="TDD" />
+      <working_directory value="$PROJECT_DIR$/project2" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="TDD/project2" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestIntParse1$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestIntParse2 in TDD/project2" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="TDD" />
+      <working_directory value="$PROJECT_DIR$/project2" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="TDD/project2" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestIntParse2$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Test.TestArgs in TDD/project2" />
+        <item itemvalue="Go Test.TestIntParse2 in TDD/project2" />
+        <item itemvalue="Go Test.TestIntParse1 in TDD/project2" />
+        <item itemvalue="Go Test.TestIntParse in TDD/project2" />
         <item itemvalue="Go Test.TestD in TDD/project2" />
-        <item itemvalue="Go Test.TestGame in TDD/project1" />
       </list>
     </recent_temporary>
   </component>
@@ -176,49 +255,53 @@
       <option name="presentableId" value="Default" />
       <updated>1561099123505</updated>
       <workItem from="1561099127338" duration="12422000" />
-      <workItem from="1561178785834" duration="5184000" />
+      <workItem from="1561178785834" duration="5935000" />
+      <workItem from="1561344017005" duration="8681000" />
+      <workItem from="1561379126998" duration="5135000" />
+      <workItem from="1561425001791" duration="7269000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 13h 48m 17s.xml">
+    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.25 at 10h 58m 58s.xml">
       <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 13h 50m 05s.xml">
+    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.25 at 11h 21m 52s.xml">
       <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 13h 56m 25s.xml">
+    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.25 at 11h 24m 57s.xml">
       <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 14h 00m 54s.xml">
+    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.25 at 11h 25m 41s.xml">
       <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 14h 01m 54s.xml">
+    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.25 at 11h 30m 33s.xml">
       <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 14h 04m 15s.xml">
+    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.25 at 11h 38m 00s.xml">
       <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 14h 05m 56s.xml">
+    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.25 at 11h 40m 36s.xml">
       <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 14h 09m 11s.xml">
+    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.25 at 11h 41m 20s.xml">
       <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 14h 10m 42s.xml">
+    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.25 at 11h 43m 36s.xml">
       <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.22 at 14h 13m 35s.xml">
+    <history-entry file="TestArgs_in_TDD_project2 - 2019.06.25 at 11h 46m 52s.xml">
       <configuration name="TestArgs in TDD/project2" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17606000" />
+    <option name="totallyTimeSpent" value="39442000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20710456" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21514745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -227,7 +310,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34135976" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37677053" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -263,23 +346,8 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project1/GameService_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project1/GameService.go">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
     </entry>
     <entry file="file://E:/Go/src/reflect/type.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -288,22 +356,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2/Args.go">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Go/src/testing/testing.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="147" column="5" lean-forward="true" selection-start-line="147" selection-start-column="5" selection-end-line="147" selection-end-column="5" />
+        <state relative-caret-position="94">
+          <caret line="829" selection-start-line="829" selection-end-line="829" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2/IntParser.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
           <folding>
-            <element signature="e#18#80#0" expanded="true" />
+            <element signature="e#18#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2/StringParser.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project1/GameService_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2/Checker.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="e#18#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2/BoolParser.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="e#18#69#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project2/Args_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+        <state relative-caret-position="-551">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
           <folding>
             <element signature="e#18#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2/Args.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="69" column="27" lean-forward="true" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
+          <folding>
+            <element signature="e#18#69#0" expanded="true" />
           </folding>
         </state>
       </provider>
