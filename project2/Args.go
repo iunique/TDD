@@ -42,10 +42,8 @@ func (args *Args)ParseCommand(){
 		return
 	}
 	s:=strings.Split(args.Command," ")
-	logrus.Println(s)
 	for i:=0;i<len(s);i++{
 		t:=strings.TrimSpace(s[i])
-		logrus.Println("t:",t)
 		if(t==""||t[0]!='-'){//不为flag则跳过
 			continue
 		}

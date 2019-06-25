@@ -13,7 +13,7 @@ func (args *Args)CheckCommand(s string)bool{//分析字符串是否为Command以
 		}
 		return isExist
 	}
-	logrus.Println("命令不合法")
+	logrus.Println("该字串不为命令")
 	return false
 }
 
