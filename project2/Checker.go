@@ -30,7 +30,7 @@ func (args *Args)CheckInit()bool{
 //判断类型
 func (args *Args)CheckType(key string,v interface{})bool{
 	if !args.CheckInit(){
-		logrus.Println("GetValue false!")
+		logrus.Errorf("GetValue false!")
 	}
 	value,isFind:=args.FlagsMapping[key]
 	if(isFind){

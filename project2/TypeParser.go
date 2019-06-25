@@ -18,7 +18,7 @@ func (args *Args)TypeParse(tmpType string,key string,v string)bool{
 		}
 	case "bool":
 		if (args.BoolParse(key,v)) {
-			logrus.Println("nool分解成功")
+			logrus.Println("bool分解成功")
 			return true
 		}
 	}
