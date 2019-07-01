@@ -6,18 +6,18 @@ import (
 
 func (args *Args)TypeParse(tmpType string,key string,v string)bool{
 	switch tmpType {
-	case "string":
-		if (args.StringParse(key,v)) {
+	case "string" :
+		if ( args.StringParse( key, v ) ) {
 			logrus.Println("string分解成功")
 			return true
 		}
-	case "int":
-		if (args.IntParse(key,v)) {
+	case "int" :
+		if ( args.IntParse( key, v ) ) {
 			logrus.Println("int分解成功")
 			return true
 		}
-	case "bool":
-		if (args.BoolParse(key,v)) {
+	case "bool" :
+		if ( args.BoolParse( key, v ) ) {
 			logrus.Println("bool分解成功")
 			return true
 		}

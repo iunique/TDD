@@ -69,15 +69,15 @@ func TestArgs(test *testing.T){
 	}
 	for i,t :=range exp{
 		args := new(Args)
-		args.Init(t.flags,t.command)
+		args.Init(t.flags, t.command)
 		args.ParseFlags()
 		args.ParseCommand()
-		s:=args.GetValue(t.key)
-		if(!args.CheckType(t.key,t.real)) {
-			test.Errorf("第%d组类型错误，输入参数:flags:%v command:%v key:%v real:%v  得到结果:%s\n",i,t.flags,t.command,t.key,t.real,s)
+		s := args.GetValue(t.key)
+		if(!args.CheckType( t.key, t.real ) ) {
+			test.Errorf("第%d组类型错误，输入参数:flags:%v command:%v key:%v real:%v  得到结果:%s\n", i, t.flags, t.command, t.key, t.real, s)
 		}
-		if(strings.Compare(args.GetValue(t.key),s)!=0){
-			test.Errorf("第%d组结果错误，输入参数:flags:%v command:%v key:%v real:%v  得到结果:%s\n",i,t.flags,t.command,t.key,t.real,s)
+		if( strings.Compare( args.GetValue( t.key ), s ) !=0  ){
+			test.Errorf("第%d组结果错误，输入参数:flags:%v command:%v key:%v real:%v  得到结果:%s\n", i, t.flags, t.command, t.key, t.real, s)
 		}
 	}
 }
