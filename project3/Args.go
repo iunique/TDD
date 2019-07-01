@@ -35,7 +35,9 @@ func (args *Args)ParseCommand(){
 		if( args.IsCommand( t ) ){//判断该词是否为命令
 			tmpType, _ := args.FlagsMapping[ t[1:] ] //提取该命令对应的类型
 			isSucc := args.TypeParse(tmpType, t[1:], strings.TrimSpace( s[i+1] ))//用TyParse去处理该词和下一个词是否匹配
-				if isSucc { i++ }//若匹配，跳过下一个词
+			if isSucc { i++ }else{//若匹配，跳过下一个词
+				args.CommandMapping[tmpType] = args.DefaultMapping[tmpType]
+			}
 		}
 	}
 }
